@@ -1260,7 +1260,7 @@ HTML Forms : Lab
 
  * Create an action form to validate input
 
-   * use both types of validators (is_ and ctype_)
+   * use both types of validators (``is_`` and ``ctype_``)
 
  * Use an HTML template in three parts: header, body, footer
 
@@ -1332,4 +1332,210 @@ Security : Lab
 
    * http://is.gd/gDu2e
    * http://is.gd/gDu54
+
+=====
+Day 4
+=====
+
+Overview
+========
+
+ * Sessions and Cookies
+ * HTML Forms (cont.)
+
+====================
+Cookies and Sessions
+====================
+
+Objectives : Cookies & Sessions
+===============================
+
+ * Outline cookies vs sessions
+ * Open, close and verify user sessions
+
+Cookies vs Sessions
+===================
+
+ * Client vs Server
+ * Secure vs Insecure
+
+Security Concerns
+=================
+
+ * http://codebutler.com/firesheep
+ * http://enablesecurity.com/2008/08/29/setting-the-secure-flag-in-the-cookie-is-easy/
+
+Using Cookies
+=============
+
+ * cookie name
+ * cookie value
+ * cookie expiration
+
+Cookies : Example
+=================
+
+.. code-block:: php
+
+    <?php
+        setcookie("name", $_POST['name'], time() + 31536000, path, domain, secure);
+    ?>
+
+Using Sessions
+==============
+
+Starting a Session
+==================
+
+.. code-block:: php
+
+    <?php
+        session_start();
+    ?>
+
+Adding Session Data
+===================
+
+.. code-block:: php
+
+    <?php
+        session_start();
+        
+        $_POST['username'] = $_SESSION['username'];
+        $_POST['password'] = $_SESSION['password'];
+    ?>
+
+Reading Session Data
+====================
+
+.. code-block:: php
+
+    <?php
+        print $_SESSION['username'];
+        print $_SESSION['password'];
+    ?>
+
+Removing Session Data
+=====================
+
+.. code-block:: php
+
+    <?php
+        unset($_SESSION['username']);
+    ?>
+
+Ending Sessions
+===============
+
+.. code-block:: php
+
+    <?php
+        $_SESSION = array();
+        session_destroy();
+    ?>
+
+Checking Session Data
+=====================
+
+.. code-block:: php
+
+    <?php
+        if (isset($_SESSION['name'])) {
+        ...[snip]...
+        }
+    ?>
+
+Checking Session Data (Example)
+===============================
+
+.. code-block:: php
+
+    <?php
+        if (!isset($_SESSION['username']) {
+            header("Location: login.php");
+        }
+    ?>
+
+Demonstration : Contacts
+========================
+
+Questions : Cookies & Sessions
+==============================
+
+ * Questions?
+ * Comments?
+
+Cookies & Sessions : Lab
+========================
+
+ * Create a login page to create sessions
+ * Include a logout button to end sessions
+ * Require an active session for your form
+
+Class Review
+============
+
+Please take 5 minutes to review your class experience.
+
+==================
+HTML Forms (Cont.)
+==================
+
+Splitting Forms Across Pages
+============================
+
+ * Keep forms short
+ * Use multi-page forms as needed
+ * Collect and handle form data
+
+Splitting Forms : $_GET
+=======================
+
+.. code-block:: html
+
+    <form action="" method="post">
+    ...
+    <input type="hidden" name="name" value="<?php print $_GET['name']; ?>" />
+    <input type="hidden" name="password" value="<?php print $_GET['password']; ?>" />
+    ...
+    </form>
+
+Splitting Forms : $_POST
+========================
+
+.. code-block:: html
+
+    <form action="" method="post">
+    ...
+    <input type="hidden" name="name" value="<?php print $_POST['name']; ?>" />
+    <input type="hidden" name="password" value="<?php print $_POST['password']; ?>" />
+    ...
+    </form>
+
+Splitting Forms : $_SESSION
+===========================
+
+.. code-block:: html
+
+    <form action="" method="post">
+    ...
+    <input type="hidden" name="name" value="<?php print $_SESSION['name']; ?>" />
+    <input type="hidden" name="password" value="<?php print $_SESSION['password']; ?>" />
+    ...
+    </form>
+
+Production Forms : Lab
+======================
+
+ * Create a multi-page form
+ * Pass data between forms using hidden elements
+
+   * Use GET, POST, and SESSION for values
+
+Contact
+=======
+
+  Questions? Comments?
+
+  christer.edwards@gmail.com
 
