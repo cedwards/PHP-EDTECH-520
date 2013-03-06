@@ -71,3 +71,112 @@ Questions : Environment
  * Questions?
  * Comments?
 
+Lab : Development Environment
+=============================
+
+ * Become familiar with your development environment
+   * Change your login password
+   * Find your web browser(s) / text editor(s)
+   * Launch Gnote Notes / Read 'Getting Started'
+   * Customize your Desktop Appearance (Desktop Background, etc)
+   * Logout / Login / Reboot / Shutdown / etc.
+
+
+===================
+Introduction to PHP
+===================
+
+PHP History
+===========
+
+ * Early Internet
+ * C? Perhaps Perl?
+ * 5 Versions since 1995
+ * PHP 5: SQLite, SimpleXML, Improved OOP, Try/Catch
+
+Advantages of PHP
+=================
+
+ * Fast
+ * Easy
+ * Widely Used / Popular
+
+HTML Relationship
+=================
+
+ * Code Islands
+ * Dynamic HTML Content
+
+Interpreting vs Compiling
+=========================
+
+ * Opcodes
+ * Code Cache
+ * Garbage Collection
+
+Output Control
+==============
+
+ * Code Island
+ * Pure PHP
+ * Buffering
+
+Performance
+===========
+
+ * Rivals Perl and ASP
+ * Continually Improving
+
+Getting Help
+============
+
+If you have tried debugging and failed, don't fret–there are still support
+options where you might find your solution.
+
+Documentation
+=============
+
+ * Manual [http://www.php.net/manual/]
+
+Mailing Lists
+=============
+
+ * php [http://www.php.net/mailing-lists.php]
+ * uphpu [http://uphpu.org/mailman/listinfo/uphpu]
+
+IRC
+===
+
+ * #php on irc.freenode.net - Global Support
+ * #uphpu on irc.freenode.net - Local Support
+
+Conferences
+===========
+
+ * O'Reilly's OSCON
+
+User Groups
+===========
+
+ * uphpu [http://uphpu.org]
+
+Getting Certified
+=================
+
+ * Zend Certification
+ * MySQL Certification
+
+Additional Reading
+==================
+
+ * http://www.php.net/manual
+ * http://www.zend.com
+ * http://www.phpbuilder.com
+ * http://www.devshed.com
+
+Questions : Introduction
+========================
+
+ * Questions?
+ * Comments?
+
