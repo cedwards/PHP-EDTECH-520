@@ -75,6 +75,7 @@ Lab : Development Environment
 =============================
 
  * Become familiar with your development environment
+
    * Change your login password
    * Find your web browser(s) / text editor(s)
    * Launch Gnote Notes / Read 'Getting Started'
@@ -179,4 +180,64 @@ Questions : Introduction
 
  * Questions?
  * Comments?
+
+Introduction : Lab
+==================
+
+ * Visit the PHP Manual [1]
+
+   * Search for a term from the book
+ * Read about the mailing lists [2][3]
+
+   * Subscribe to a mailing list
+   * (php-general or uphpu)
+
+ * [1] http://www.php.net/manual
+ * [2] http://php.net/mailing-lists.php
+ * [3] http://uphpu.org/mailing-lists-and-irc/
+
+Installing PHP
+==============
+
+  * Beneficial to understand
+  * Customization
+
+Configuring Extensions
+======================
+
+  * ;extension=php_tidy.dll
+  * extension=php_tidy.dll
+
+Installing on Linux
+===================
+
+  * Package Manager
+  * Compile Source
+
+Installing Using Packages
+=========================
+
+  * yum
+  * Add / Remove Software
+
+Add / Remove Software
+=====================
+
+{{:php:nutshell:slides:apper.png|Add / Remove Software}}
+
+LAMP (Linux Apache MySQL PHP)
+=============================
+
+The most common web-development environment is referred to as the "LAMP" stack.
+
+Installation : Lab
+==================
+
+Verify functionality, create an 'index.php' in /home/student/Public/:
+
+.. code-block:: php
+
+	<?php phpinfo(); ?>
+
+Visit: http://localhost/~student/
 
