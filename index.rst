@@ -787,4 +787,202 @@ Write a script using as many of the following elements as you can:
   * loops (foreach, while, for, do...while, continue, break)
   * function
 
+=======================
+Variables and Constants
+=======================
+
+Objectives : Variables & Constants
+==================================
+
+ * Become familiar with the range of data types in PHP.
+
+Types of Data
+=============
+
+ * Boolean
+ * String
+ * Integer
+ * Float
+
+Boolean
+=======
+
+ * True / False
+ * One / Zero
+ * Most numbers are true, as are most strings
+
+String
+======
+
+ * $a = "This is a string";
+ * print $a[4];
+
+Escape Sequences
+================
+
+ * \"
+ * \'
+ * \n
+ * \t
+ * \r
+ * \$
+ * %%\\%%
+
+Integer
+=======
+
+ * $b = 4;
+ * $c = 1000;
+ * $d = 42;
+
+Float
+=====
+
+ * 3.141592654
+ * 2.1
+ * 1.001
+
+Automatic Type Conversion
+=========================
+
+ * PHP is loosely (weakly) typed
+ * automatic conversion where possible
+ * typecasting
+
+Checking Whether a Variable is Set: isset()
+===========================================
+
+.. code-block:: php
+
+    <?php
+        if(isset($foo)) {
+            print "$foo is defined.\n";
+        } else {
+            print "$foo is undefined.\n";
+        }
+    ?>
+
+Superglobals
+============
+
+ * $_GET
+ * $_POST
+ * $_FILES
+ * $_COOKIE
+ * $_REQUEST
+ * $_SESSION
+ * $_SERVER
+ * $_ENV
+ * $GLOBALS
+
+Using $_ENV and $_SERVER
+========================
+
+ * HTTP_REFERRER
+ * HTTP_USER_AGENT
+ * PATH_INFO
+ * PHP_SELF
+ * REQUEST_METHOD
+ * QUERY_STRING
+
+References
+==========
+
+ * two variables pointing to the same data
+
+Constants
+=========
+
+ * immutable variables
+ * no $ required
+ * globally available
+
+Preset Constants
+================
+
+ * FILE
+ * LINE
+ * FUNCTION
+ * CLASS
+ * METHOD
+
+Mathematical Constants
+======================
+
+ * M_PI
+ * M_PI_2
+ * M_PI_4
+ * ...
+
+Arrays
+======
+
+ * Array
+ * Associative Array
+ * Multidimensional Array
+
+Array
+=====
+
+.. code-block:: php
+
+    <?php
+        $fruits = array("Apples","Oranges","Pears");
+        $size = count($fruits);
+        print_r($fruits);
+    ?>
+
+Associative Arrays
+==================
+
+.. code-block:: php
+
+    <?php
+      $fruits = array("Apple"=>"red","Oranges"=>"orange","Pears"=>"green");
+      var_dump($fruits);
+    ?>
+
+Multidimensional Array
+======================
+
+.. code-block:: php
+
+	<?php
+	  $capitalcities['England'] = array("Capital"=>"London", 
+	      "Population"=>40000000);
+	  $capitalcities['Wales'] = array("Capital"=>"Cardiff", 
+	      "Population"=>50000000);
+	  $capitalcities['Scotland'] = array("Capital"=>"Edinburgh", 
+	      "Population"=>8000000);
+	
+	  var_dump($capitalcities);
+	?>
+
+Saving Arrays
+=============
+
+ * save arrays into files, sessions, etc.
+ * serialize()
+ * unserialize()
+ * urlencode()
+ * urldecode()
+
+Questions : Variables
+=====================
+
+ * Questions?
+ * Comments?
+
+Variables / Data Types : Lab
+============================
+
+Write a script that uses:
+
+ * boolean
+ * string
+ * float
+ * integer
+ * array (two types)
+
+Make use of the isset() function.
 
