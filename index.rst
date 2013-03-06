@@ -947,16 +947,16 @@ Multidimensional Array
 
 .. code-block:: php
 
-	<?php
-	  $capitalcities['England'] = array("Capital"=>"London", 
-	      "Population"=>40000000);
-	  $capitalcities['Wales'] = array("Capital"=>"Cardiff", 
-	      "Population"=>50000000);
-	  $capitalcities['Scotland'] = array("Capital"=>"Edinburgh", 
-	      "Population"=>8000000);
-	
-	  var_dump($capitalcities);
-	?>
+   <?php
+     $capitalcities['England'] = array("Capital"=>"London", 
+         "Population"=>40000000);
+     $capitalcities['Wales'] = array("Capital"=>"Cardiff", 
+         "Population"=>50000000);
+     $capitalcities['Scotland'] = array("Capital"=>"Edinburgh", 
+         "Population"=>8000000);
+   
+     var_dump($capitalcities);
+   ?>
 
 Saving Arrays
 =============
@@ -985,4 +985,162 @@ Write a script that uses:
  * array (two types)
 
 Make use of the isset() function.
+
+=====
+Day 3
+=====
+
+Overview
+========
+
+ * Review & Questions
+ * Operators
+ * HTML Forms
+ * Security
+
+PHP Language : Lab
+==================
+
+Write a script using as many of the following elements as you can:
+
+ * variable
+ * heredoc
+ * comments
+ * conditional statement (if, else, elseif)
+ * case switching
+ * loops (foreach, while, for, do...while, continue, break)
+ * function
+
+Variables / Data Types : Lab
+============================
+
+Write a script that uses:
+
+ * boolean
+ * string
+ * float
+ * integer
+ * array (two types)
+
+Make use of the isset() function.
+
+=========
+Operators
+=========
+
+Objectives : Operators
+======================
+
+Become familiar with the following types of PHP operators:
+
+ * Arithmetic
+ * Assignment
+ * String
+ * Comparison
+ * Logical
+ * Ternary
+
+Arithmetic Operators
+====================
+
+ * ``+``
+ * ``-``
+ * ``/``
+ * ``*``
+
+Assignment Operators
+====================
+
+ * ``=``
+ * ``=&``
+
+String Operators
+================
+
+ * ``.``
+ * ``.=``
+
+Comparison Operators
+====================
+
+ * ``==``
+ * ``===``
+ * ``!=``
+ * ``<>``
+ * ``!==``
+ * ``<``
+ * ``>``
+ * ``<=``
+ * ``>=``
+
+Incrementing and Decrementing Operators
+=======================================
+
+ * ``++$a``
+ * ``$a++``
+ * ``--$a``
+ * ``$a--``
+
+Logical Operators
+=================
+
+ * AND / &&
+ * OR / ||
+ * XOR
+ * !
+
+The Ternary Operator
+====================
+
+These are the same:
+
+.. code-block:: php
+
+    <?php
+        $agestr = ($age < 16) ? 'child' : 'adult';
+    ?>
+
+    <?php
+        if ($age < 16) {
+            $agestr = 'child';
+        } else {
+            $agestr = 'adult';
+        }
+    ?>
+
+The Execution Operator
+======================
+
+  * backticks (`)
+
+.. code-block:: php
+
+    <?php
+        print `ls`;
+    ?>
+
+Operator Precedence and Associativity
+=====================================
+
+ * order of operations
+ * generally left-to-right, with a few exceptions
+
+Questions : Operators
+=====================
+
+ * Questions?
+ * Comments?
+
+Operators : Lab
+===============
+
+Include the following operators in your script:
+
+ * Arithmetic (pg. 79)
+ * String (pg .81)
+ * Comparison (pg. 82)
+ * Incrementing / Decrementing (pg. 84)
+ * Logical (pg. 84)
+ * Ternary (pg. 86)
+
 
