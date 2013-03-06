@@ -1143,4 +1143,126 @@ Include the following operators in your script:
  * Logical (pg. 84)
  * Ternary (pg. 86)
 
+==========
+HTML Forms
+==========
+
+Objectives : HTML Forms
+=======================
+
+ * Incorporate user-input into scripts via HTML Forms
+ * Understand differences in GET and POST methods
+ * Form handling
+ * Input Validation
+
+GET and POST
+============
+
+ * GET
+ * POST
+
+Form Elements
+=============
+
+ * checkbox
+ * file
+ * hidden
+ * password
+ * radio
+ * reset
+ * submit
+ * text
+
+Form : Example
+==============
+
+.. code-block:: html
+
+    <form action="someform.php" method="get">
+    Name: <input type="text" name="name" /><br />
+    Password: <input type="password" name="password" /><br />
+    Age: <input type="text" name="age" /><br />
+    
+    <input type="submit" />
+    </form>
+
+CTYPE validation
+================
+
+ * ctype_alnum()
+ * ctype_alpha()
+ * ctype_digit()
+ * ctype_lower()
+ * ctype_upper()
+ * ctype_punct()
+ * ctype_cntrl()
+ * ctype_graph()
+
+Validation : Example 1
+======================
+
+.. code-block:: php
+
+    <?php
+        if (!is_string($_POST['name'])) {
+           print "Please provide a valid name";
+        }
+    ?>
+
+Validation : Example 2
+======================
+
+.. code-block:: php
+
+    <?php
+        if (ctype_digit($_POST['phone'])) {
+            print "Thank you for entering your phone number";
+        }
+    ?>
+
+Validation : Redirection
+========================
+
+.. code-block:: php
+
+    <?php
+        if (!isset($_POST['username'])) {
+            header("Location: login.php");
+        }
+    ?>
+
+Summary
+=======
+
+ * **Never trust user input!**
+
+Exploits
+========
+
+{{:php:nutshell:slides:exploits_of_a_mom.png|Her daughter is named Help I'm
+trapped in a driver's license factory."}}
+
+
+Questions : HTML Forms
+======================
+
+ * Questions?
+ * Comments?
+
+HTML Forms : Lab
+================
+
+ * Create a form to collect contact information
+
+   * name
+   * email
+   * phone number
+
+ * Create an action form to validate input
+
+   * use both types of validators (is_ and ctype_)
+
+ * Use an HTML template in three parts: header, body, footer
+
+   * tip: include_once(), require_once().
 
