@@ -1266,3 +1266,70 @@ HTML Forms : Lab
 
    * tip: include_once(), require_once().
 
+========
+Security
+========
+
+Security : Overview
+===================
+
+ * Security Tips (Server)
+ * Secure, Defensive Code
+
+Put Key Files Outside Your Document Root
+========================================
+
+ * /home/student/Public/ (Public, PHP accessible)
+ * /home/student/ (Private, PHP accessible)
+
+Remember That Most Files Are Public
+===================================
+
+  * .inc.php (Good)
+
+  * .inc (Bad)
+
+.. code-block:: php
+
+    ; <?php exit; ?>
+
+Hide Your Identity
+==================
+
+ * Server: Apache/2.2.16 (Ubuntu) Server at 127.0.0.1 Port 80
+
+vs
+
+ * Server: Apache
+
+Hiding PHP
+==========
+
+ * expose_php = Off
+ * display_errors = Off
+ * log_errors = On
+
+2010 Top 25 Exploits
+====================
+
+ * http://cwe.mitre.org/top25/#Listing
+
+Wireshark
+=========
+
+ * Wireshark (demonstration)
+
+Questions: Security
+===================
+
+ * Questions?
+ * Comments?
+
+Security : Lab
+==============
+
+ * Enable SSL encryption on your web server
+
+   * http://is.gd/gDu2e
+   * http://is.gd/gDu54
+
