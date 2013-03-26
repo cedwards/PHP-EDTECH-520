@@ -3,7 +3,7 @@ PHP Level 1 (EDTECH-520)
 ========================
 
 - Author: Christer Edwards
-- Revision: 2013-03-06
+- Revision: 2013-03-26
 
 Overview
 ========
@@ -16,32 +16,39 @@ Overview
 Development Environment
 =======================
 
-Development Environment : Fedora
+Development Environment : Ubuntu
 ================================
 
-{{:php:nutshell:slides:fedora-logo.png|Fedora}}
-
-Login Information
-=================
-
-**username**: student
-
-**password**: student
-
-Browsers
-========
-
-{{:php:nutshell:slides:browsers-lancelot-462.png|Firefox}}
-
-Terminal
-========
-
-{{:php:nutshell:slides:konsole-lancelot-462.png|Konsole}}
+.. image:: /images/ubuntu-logo14.png
+   :align: center
 
 Editor
 ======
 
-{{:php:nutshell:slides:kate-lancelot-462.png|kate}}
+.. image:: /images/gedit-launcher.png
+   :align: center
+   :scale: 90%
+
+Browsers : Chrome
+==================
+
+.. image:: /images/chrome-launcher.png
+   :align: center
+   :scale: 90%
+
+Browsers : Firefox
+==================
+
+.. image:: /images/firefox-launcher.png
+   :align: center
+   :scale: 90%
+
+Terminal
+========
+
+.. image:: /images/terminal-launcher.png
+   :align: center
+   :scale: 90%
 
 Platform Discussion
 ===================
@@ -63,7 +70,9 @@ Helpful Tools
 Gnote Notes
 ===========
 
-{{:php:nutshell:slides:gnote-lancelot-462.png|Gnote Notes}}
+.. image:: /images/gnote-launcher.png
+   :align: center
+   :scale: 90%
 
 Questions : Environment
 =======================
@@ -76,12 +85,9 @@ Development Environment : Lab
 
  * Become familiar with your development environment
 
-   * Change your login password
    * Find your web browser(s) / text editor(s)
    * Launch Gnote Notes / Read 'Getting Started'
    * Customize your Desktop Appearance (Desktop Background, etc)
-   * Logout / Login / Reboot / Shutdown / etc.
-
 
 ===================
 Introduction to PHP
@@ -187,6 +193,7 @@ Introduction : Lab
  * Visit the PHP Manual [1]
 
    * Search for a term from the book
+
  * Read about the mailing lists [2][3]
 
    * Subscribe to a mailing list
@@ -217,13 +224,15 @@ Installing on Linux
 Installing Using Packages
 =========================
 
-  * yum
+  * apt-get command
   * Add / Remove Software
 
 Add / Remove Software
 =====================
 
-{{:php:nutshell:slides:apper.png|Add / Remove Software}}
+.. image:: /images/software-center-launcher.png
+   :align: center
+   :scale: 90%
 
 LAMP (Linux Apache MySQL PHP)
 =============================
@@ -239,7 +248,7 @@ Verify functionality, create an 'index.php' in /home/student/Public/:
 
 	<?php phpinfo(); ?>
 
-Visit: http://localhost/~student/
+Visit: http://localhost/~ubuntu/
 
 
 =====
