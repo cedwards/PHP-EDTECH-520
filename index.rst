@@ -16,7 +16,7 @@ Overview
 Development Environment
 =======================
 
-Development Environment : Ubuntu
+Development Environment : Fedora
 ================================
 
 .. image:: /images/ubuntu-logo14.png
@@ -248,7 +248,7 @@ Verify functionality, create an 'index.php' in /home/student/Public/:
 
 	<?php phpinfo(); ?>
 
-Visit: http://localhost/~ubuntu/
+Visit: http://localhost/~student/
 
 
 =====
@@ -411,7 +411,7 @@ Heredoc Restrictions
 ====================
 
  * You can use anything you like; EOT is just an example.
- * You need to use %%<<<%% before the delimiter to tell PHP you want to enter heredoc mode.
+ * You need to use ``<<<`` before the delimiter to tell PHP you want to enter heredoc mode.
  * Variable substitution is enabled, which means you need to escape dollar symbols if you don't want PHP to replace variables with their values.
  * You can use your delimiter anywhere in the text, but not in the first column of a new line.
  * At the end of the string, type the delimiter with no whitespace around it, followed by a semicolon.
@@ -752,8 +752,8 @@ Default Parameters : Example
 Variable Scope in Functions
 ===========================
 
- * variables declared outside of functions are considered //global//
- * variables declared inside of functions are considered //local//
+ * variables declared outside of functions are considered *global*
+ * variables declared inside of functions are considered *local*
  * global variables are available elsewhere in your scripts
  * local variables are not available outside functions
 
@@ -835,7 +835,7 @@ Escape Sequences
  * \t
  * \r
  * \$
- * %%\\%%
+ * ``\\``
 
 Integer
 =======
@@ -1248,9 +1248,8 @@ Summary
 Exploits
 ========
 
-{{:php:nutshell:slides:exploits_of_a_mom.png|Her daughter is named Help I'm
-trapped in a driver's license factory."}}
-
+.. image:: /images/exploits_of_a_mom.png
+   :align: center
 
 Questions : HTML Forms
 ======================
@@ -1323,24 +1322,16 @@ Hiding PHP
 
  * http://cwe.mitre.org/top25/#Listing
 
-Wireshark
-=========
-
- * Wireshark (demonstration)
-
 Questions: Security
 ===================
 
  * Questions?
  * Comments?
 
-Security : Lab
-==============
+Security: Lab
+=============
 
- * Enable SSL encryption on your web server
-
-   * http://is.gd/gDu2e
-   * http://is.gd/gDu54
+ * Wireshark demo
 
 =====
 Day 4
@@ -1464,9 +1455,6 @@ Checking Session Data (Example)
             header("Location: login.php");
         }
     ?>
-
-Demonstration : Contacts
-========================
 
 Questions : Cookies & Sessions
 ==============================
