@@ -35,6 +35,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.querySelector('#slide_container').innerHTML =  prev_slide + cur_slide + next_slide;
 
+        // Copy the presenter notes into place
+        $('#presenter_notes').empty();
+        $('article.current').find('div.admonition.note').each(
+            function(i, node) {
+                $('#presenter_notes').append($(node).html());
+            }
+        );
+
         var slides = document.querySelector('section.slides > article');
         for (var i=0; i < slides.length; i++) {
 

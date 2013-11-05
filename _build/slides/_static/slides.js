@@ -93,6 +93,7 @@ function updateSlides() {
   }
 
   updateHash();
+  $(document).trigger('slidesSized');
 
   // notifyListeners(
   //     {command: 'cur_slide',
@@ -178,6 +179,7 @@ function toggleView() {
   }
 
   slidesContainer.classList.toggle(TABLE_CLASS);
+  $(document).trigger('slidesSized');
 };
 
 
@@ -502,6 +504,7 @@ function handleDomLoaded() {
   makeBuildLists();
 
   document.body.classList.add('loaded');
+  $(document).trigger('slidesSized');
 };
 
 

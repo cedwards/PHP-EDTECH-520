@@ -40,3 +40,8 @@ div.figure p.caption {
     right: 1em;
     font-size: 66%;
 }
+
+div.admonition.note {
+    visibility: hidden;
+    display: none;
+}

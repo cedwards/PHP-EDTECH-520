@@ -519,6 +519,10 @@ Case Switching : Example
         }
     ?>
 
+=====
+Break
+=====
+
 Loops
 =====
 
@@ -788,13 +792,13 @@ PHP Language : Lab
 
 Write a script using as many of the following elements as you can:
 
-  * variable
-  * heredoc
-  * comments
-  * conditional statement (if, else, elseif)
-  * case switching
-  * loops (foreach, while, for, do...while, continue, break)
-  * function
+  * variable (pg. 24)
+  * heredoc (pg. 26)
+  * comments (pg. 28)
+  * conditional statement (if, else, elseif) (pg. 28)
+  * case switching (pg. 30)
+  * loops (foreach, while, for, do...while, continue, break) (pg. 32)
+  * function (pg. 39)
 
 =======================
 Variables and Constants
@@ -829,12 +833,12 @@ String
 Escape Sequences
 ================
 
- * \"
- * \'
- * \n
- * \t
- * \r
- * \$
+ * ``\"``
+ * ``\'``
+ * ``\n``
+ * ``\t``
+ * ``\r``
+ * ``\$``
  * ``\\``
 
 Integer
@@ -987,13 +991,13 @@ Variables / Data Types : Lab
 
 Write a script that uses:
 
- * boolean
- * string
- * float
- * integer
- * array (two types)
+ * boolean (pg. 48)
+ * string (pg. 48)
+ * float (pg. 50)
+ * integer (pg. 49)
+ * array (two types) (pg. 62)
 
-Make use of the isset() function.
+Make use of the isset() function. (pg. 52)
 
 =====
 Day 3
